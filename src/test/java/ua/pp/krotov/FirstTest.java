@@ -2,7 +2,7 @@ package ua.pp.krotov;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,7 +15,7 @@ public class FirstTest {
 	@BeforeClass // Runs this method before the first test method in the current class is invoked
 	public void setUp() {
 		// Create a new instance of the Firefox driver
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 	}
 	
 	@Test // Marking this method as part of the test
